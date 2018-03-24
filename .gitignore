@@ -1,3 +1,10 @@
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.zip
+.vscode
+secrets.json
+
 # Logs
 logs
 *.log
