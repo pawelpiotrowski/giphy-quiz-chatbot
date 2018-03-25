@@ -1,0 +1,9 @@
+{
+    "main": {
+        "threadKeys": [
+            "get_started_hook",
+            "$sequence.welcome"
+        ],
+        "endKey": "ynaQQokBlb"
+    }
+}

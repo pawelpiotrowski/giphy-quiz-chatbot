@@ -1,0 +1,117 @@
+{
+    "WELCOME": {
+        "meta": {
+            "template": "sequence"
+        },
+        "payload": [
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "typeon",
+                    "args": ""
+                }
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "wait",
+                    "args": 2000
+                }
+            },
+            {
+                "meta": {
+                    "template": "text"
+                },
+                "payload": "Welcome to the G Quiz where you can test your knowledge or challenge your friends! 🤓"
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "typeon",
+                    "args": ""
+                }
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "wait",
+                    "args": 4500
+                }
+            },
+            {
+                "meta": {
+                    "template": "text"
+                },
+                "payload": "To start simply choose a category, difficulty level and number of questions..."
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "typeon",
+                    "args": ""
+                }
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "wait",
+                    "args": 3000
+                }
+            }
+        ]
+    },
+    "SET_CATEGORY": {
+        "meta": {
+            "template": "quick_replies"
+        },
+        "payload": {
+            "text": "Please choose a category:",
+            "quick_replies": [
+                {
+                    "content_type": "text",
+                    "title": "Books",
+                    "payload": "set.category.books"
+                },
+                {
+                    "content_type": "text",
+                    "title": "Celebrities",
+                    "payload": "set.category.celebrities"
+                },
+                {
+                    "content_type": "text",
+                    "title": "Comics",
+                    "payload": "set.category.comics"
+                },
+                {
+                    "content_type": "text",
+                    "title": "Computers",
+                    "payload": "set.category.computers"
+                },
+                {
+                    "content_type": "text",
+                    "title": "Film",
+                    "payload": "set.category.film"
+                }
+            ]
+        },
+        "valid_keys": ["Books", "Celebrities", "Comics", "Computers", "Film"],
+        "invalid": {
+            "meta": {
+                "template": "text"
+            },
+            "payload": "Sorry! That's not quite right 🤔 . Please try answering again."
+        }
+    }
+}
