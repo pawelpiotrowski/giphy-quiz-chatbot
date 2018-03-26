@@ -1,4 +1,5 @@
 {
     "http_port": 8080,
-    "locales": ["en"]
+    "locales": ["en"],
+    "defaultDialog": "main"
 }
