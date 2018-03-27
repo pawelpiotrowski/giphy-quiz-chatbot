@@ -1,5 +1,6 @@
 {
     "http_port": 8080,
     "locales": ["en"],
-    "defaultDialog": "main"
+    "defaultDialog": "main",
+    "dbTestUserFbid": "666666666"
 }
