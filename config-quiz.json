@@ -1,0 +1,25 @@
+{
+    "apiUrl": "",
+    "categories": [
+        {
+            "id": 10,
+            "name": "Books"
+        },
+        {
+            "id": 26,
+            "name": "Celebrities"
+        },
+        {
+            "id": 29,
+            "name": "Comics"
+        },
+        {
+            "id": 18,
+            "name": "Computers"
+        },
+        {
+            "id": 11,
+            "name": "Film"
+        }
+    ]
+}

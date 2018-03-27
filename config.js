@@ -1,6 +1,7 @@
 'use strict';
 
 let config = require('./config.json');
+const quizConfig = require('./config-quiz');
 const Log = require('./lib/log');
 let secrets;
 
@@ -14,4 +15,7 @@ try {
     };
 }
 
-module.exports = Object.assign(config, secrets);
+config = Object.assign(config, secrets);
+config.quiz = quizConfig;
+
+module.exports = config;

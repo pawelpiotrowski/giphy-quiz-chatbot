@@ -2,7 +2,8 @@
     "main": {
         "threadKeys": [
             "get_started_hook",
-            "$sequence.welcome"
+            "$sequence.welcome",
+            "$setup.category"
         ],
         "endKey": "ynaQQokBlb"
     }

@@ -34,6 +34,25 @@ To start a server run:
 
         npm start
 
+### DB Seeds and Migration
+
+To create empty migration file:
+
+        npm run db_migrate_make -- MigrationFileName
+
+To execute latest migrations:
+
+        npm run db_migrate_latest
+
+To create empty seed file:
+
+        npm run db_seed_make -- SeedFileName
+
+To execute seed file:
+
+        npm run db_seed_run
+
+
 ### Setting up chatbot profile
 
 Setup get started postback payload:

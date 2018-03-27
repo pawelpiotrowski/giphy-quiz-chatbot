@@ -72,7 +72,7 @@
             }
         ]
     },
-    "SET_CATEGORY": {
+    "CATEGORY": {
         "meta": {
             "template": "quick_replies"
         },
@@ -82,27 +82,27 @@
                 {
                     "content_type": "text",
                     "title": "Books",
-                    "payload": "set.category.books"
+                    "payload": "$setup.category.books"
                 },
                 {
                     "content_type": "text",
                     "title": "Celebrities",
-                    "payload": "set.category.celebrities"
+                    "payload": "$setup.category.celebrities"
                 },
                 {
                     "content_type": "text",
                     "title": "Comics",
-                    "payload": "set.category.comics"
+                    "payload": "$setup.category.comics"
                 },
                 {
                     "content_type": "text",
                     "title": "Computers",
-                    "payload": "set.category.computers"
+                    "payload": "$setup.category.computers"
                 },
                 {
                     "content_type": "text",
                     "title": "Film",
-                    "payload": "set.category.film"
+                    "payload": "$setup.category.film"
                 }
             ]
         },
