@@ -7,7 +7,7 @@ const sinon = require('sinon');
 const DB = require('../lib/db');
 const knexCleaner = require('knex-cleaner');
 
-describe('Inbound module', () => {
+describe('InboundTest', () => {
     
     const InboundInstance = new Inbound({ 
         recipient: { id: '987654321' },
