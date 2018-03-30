@@ -1,5 +1,6 @@
 'use strict';
 
+const _ = require('lodash');
 let config = require('./config.json');
 const quizConfig = require('./config-quiz');
 const Log = require('./lib/log');
@@ -17,5 +18,11 @@ try {
 
 config = Object.assign(config, secrets);
 config.quiz = quizConfig;
+config.quiz.size = _.map(_.times(config.quiz.maxSize), sizeUnit => {
+    return {
+        id: sizeUnit + 1,
+        slug: sizeUnit + 1
+    };
+});
 
 module.exports = config;

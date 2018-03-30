@@ -3,7 +3,9 @@
         "threadKeys": [
             "get_started_hook",
             "$sequence.welcome",
-            "$setup.category"
+            "$setup.category",
+            "$setup.difficulty",
+            "$setup.size"
         ],
         "endKey": "ynaQQokBlb"
     }

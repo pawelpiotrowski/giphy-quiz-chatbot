@@ -3,45 +3,38 @@
     "categories": [
         {
             "id": 10,
-            "name": "Books",
             "slug": "books"
         },
         {
             "id": 26,
-            "name": "Celebrities",
             "slug": "celebrities"
         },
         {
             "id": 29,
-            "name": "Comics",
             "slug": "comics"
         },
         {
             "id": 18,
-            "name": "Computers",
             "slug": "computers"
         },
         {
             "id": 11,
-            "name": "Film",
             "slug": "film"
         }
     ],
     "difficultyLevels": [
         {
             "id": "easy",
-            "name": "Easy",
             "slug": "easy"
         },
         {
             "id": "medium",
-            "name": "Medium",
             "slug": "medium"
         },
         {
             "id": "hard",
-            "name": "Hard",
             "slug": "hard"
         }
-    ]
+    ],
+    "maxSize": 10
 }

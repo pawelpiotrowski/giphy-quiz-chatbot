@@ -1,6 +1,6 @@
 {
   "name": "giphy-quiz-chatbot",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Facebook chatbot app",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,8 @@
     "lodash": "^4.17.4",
     "minimist": "^1.2.0",
     "mysql": "^2.15.0",
-    "npm-run": "^4.1.2"
+    "npm-run": "^4.1.2",
+    "safe-eval": "^0.3.0"
   },
   "engines": {
     "node": ">=8.1"

@@ -113,5 +113,50 @@
             },
             "payload": "Sorry! That's not quite right 🤔 . Please try answering again."
         }
+    },
+    "DIFFICULTY": {
+        "meta": {
+            "template": "quick_replies"
+        },
+        "payload": {
+            "text": "Please choose a difficulty level:",
+            "quick_replies": [
+                {
+                    "content_type": "text",
+                    "title": "Easy",
+                    "payload": "$setup.difficulty.easy"
+                },
+                {
+                    "content_type": "text",
+                    "title": "Medium",
+                    "payload": "$setup.difficulty.medium"
+                },
+                {
+                    "content_type": "text",
+                    "title": "Hard",
+                    "payload": "$setup.difficulty.hard"
+                }
+            ]
+        },
+        "valid_keys": ["Easy", "Medium", "Hard"],
+        "invalid": {
+            "meta": {
+                "template": "text"
+            },
+            "payload": "Sorry! That's not quite right 🤔 . Please try answering again."
+        }
+    },
+    "SIZE": {
+        "meta": {
+            "template": "text"
+        },
+        "payload": "How many questions you would like to answer? Maximum is 10",
+        "valid_keys": "_.times(10, (ind) => ++ind)",
+        "invalid": {
+            "meta": {
+                "template": "text"
+            },
+            "payload": "Sorry! That's not quite right 🤔 . Please try answering again."
+        }
     }
 }
