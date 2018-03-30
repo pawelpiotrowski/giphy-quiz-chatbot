@@ -5,8 +5,10 @@
             "$sequence.welcome",
             "$setup.category",
             "$setup.difficulty",
-            "$setup.size"
+            "$setup.size",
+            "$sequence.start",
+            "$quiz"
         ],
-        "endKey": "ynaQQokBlb"
+        "endKey": "ji2iZo2zvv"
     }
 }

@@ -158,5 +158,54 @@
             },
             "payload": "Sorry! That's not quite right 🤔 . Please try answering again."
         }
+    },
+    "START": {
+        "meta": {
+            "template": "sequence"
+        },
+        "payload": [
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "typeon",
+                    "args": ""
+                }
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "wait",
+                    "args": 2500
+                }
+            },
+            {
+                "meta": {
+                    "template": "text"
+                },
+                "payload": "Let's get started!!!"
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "typeon",
+                    "args": ""
+                }
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "wait",
+                    "args": 2000
+                }
+            }
+        ]
     }
 }
