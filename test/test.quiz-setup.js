@@ -1,10 +1,43 @@
 'use strict';
 
+const config = require('../config');
 const messagesEN = require('../data/messages-en.json');
 const quizSetup = require('../lib/quiz-setup.js');
 const expect = require('chai').expect;
 
 describe('QuizSetupTest', () => {
+    describe('getAnswerThreadValidKeys', () => {
+        it('should convert setup thread valid keys to an array if gets a string', () => {
+            const optionCategoryThread = quizSetup.getAnswerThreadValidKeys(messagesEN['CATEGORY'].valid_keys);
+            const optionDifficultyThread = quizSetup.getAnswerThreadValidKeys(messagesEN['DIFFICULTY'].valid_keys);
+            const optionSizeThread = quizSetup.getAnswerThreadValidKeys(messagesEN['SIZE'].valid_keys);
+
+            expect(optionCategoryThread).to.be.an('array');
+            expect(optionCategoryThread).to.have.lengthOf(5);
+            expect(optionDifficultyThread).to.be.an('array');
+            expect(optionDifficultyThread).to.have.lengthOf(3);
+            expect(optionSizeThread).to.be.an('array');
+            expect(optionSizeThread).to.have.lengthOf(config.quiz.maxSize);
+        });
+    });
+
+    describe('getAnswerValidKeyIndex', () => {
+        it('should return setup option valid key for given array of valid keys and answer', () => {
+            const optionCategoryThreadValidKey = quizSetup.getAnswerValidKeyIndex(messagesEN['CATEGORY'].valid_keys, 'books');
+            const optionDifficultyThreadValidKey = quizSetup.getAnswerValidKeyIndex(messagesEN['DIFFICULTY'].valid_keys, 'Medium');
+            const optionSizeThreadValidKey = quizSetup.getAnswerValidKeyIndex(messagesEN['SIZE'].valid_keys, 3);
+            const optionCategoryThreadInvalidKey = quizSetup.getAnswerValidKeyIndex(messagesEN['CATEGORY'].valid_keys, 'hello there');
+            const optionDifficultyThreadInvalidKey = quizSetup.getAnswerValidKeyIndex(messagesEN['DIFFICULTY'].valid_keys, 'Extra');
+            const optionSizeThreadInvalidKey = quizSetup.getAnswerValidKeyIndex(messagesEN['SIZE'].valid_keys, '100000');
+            
+            expect(optionCategoryThreadValidKey).to.equal(0);
+            expect(optionDifficultyThreadValidKey).to.equal(1);
+            expect(optionSizeThreadValidKey).to.equal(2);
+            expect(optionCategoryThreadInvalidKey).to.equal(-1);
+            expect(optionDifficultyThreadInvalidKey).to.equal(-1);
+            expect(optionSizeThreadInvalidKey).to.equal(-1);
+        });
+    });
 
     describe('getOptionKey', () => {
         it('should return setup option key to store for given option slug', () => {
