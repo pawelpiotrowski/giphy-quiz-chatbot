@@ -4,6 +4,7 @@ ehthumbs.db
 *.zip
 .vscode
 secrets.json
+secrets
 
 # Logs
 logs

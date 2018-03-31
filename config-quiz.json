@@ -1,6 +1,5 @@
 {
     "apiUrl": "https://opentdb.com/api.php",
-    "apiToken": "",
     "categories": [
         {
             "id": 10,

@@ -17,7 +17,7 @@ describe('InboundTest', () => {
     });
 
     describe('processMessagingItem', () => {
-        it('should produce inbound item from messaging item', () => {
+        it('should produce inbound item from messaging item', async () => {
             function testInbound() {
                 const inboundItem = InboundInstance.getInboundItem();
                 expect(inboundItem.type).to.equal('postback');

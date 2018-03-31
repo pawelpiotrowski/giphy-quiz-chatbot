@@ -1,0 +1,26 @@
+{
+    "QUESTION": {
+        "meta": {
+            "template": "picture_url"
+        },
+        "payload": {
+            "url": "",
+            "buttons": [
+                {
+                    "type": "postback",
+                    "title": "",
+                    "payload": ""
+                }
+            ]
+        },
+        "valid_keys": [],
+        "correct_answer": [],
+        "invalid": {
+            "meta": {
+                "template": "text"
+            },
+            "payload": "Sorry! That's not quite right 🤔 . Please try answering again."
+        },
+        "title": ""
+    }
+}
