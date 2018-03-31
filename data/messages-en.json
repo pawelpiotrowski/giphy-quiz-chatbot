@@ -33,6 +33,15 @@
                     "template": "action"
                 },
                 "payload": {
+                    "name": "wait",
+                    "args": 1500
+                }
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
                     "name": "typeon",
                     "args": ""
                 }
@@ -43,7 +52,7 @@
                 },
                 "payload": {
                     "name": "wait",
-                    "args": 4500
+                    "args": 4000
                 }
             },
             {
@@ -51,6 +60,15 @@
                     "template": "text"
                 },
                 "payload": "To start simply choose a category, difficulty level and number of questions..."
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "wait",
+                    "args": 1500
+                }
             },
             {
                 "meta": {

@@ -110,12 +110,13 @@ describe('QuizTest', () => {
                 lang: 'en'
             });
             const questionThread = await QuizInstance.getQuestionThread();
-            expect(questionThread).to.have.property('payload').to.be.an('object');
-            expect(questionThread).to.have.property('title').to.be.an('object');
-            expect(questionThread).to.have.property('attachment').to.be.an('object');
-            expect(questionThread.attachment).to.have.property('payload').to.be.an('object');
-            expect(questionThread.attachment.payload).to.have.property('url').to.have.string('http');
-            expect(questionThread.attachment.payload).to.have.property('url').to.have.string('.gif');
+            expect(questionThread.thread).to.have.property('payload').to.be.an('object');
+            expect(questionThread.thread).to.have.property('title').to.be.an('object');
+            expect(questionThread.thread).to.have.property('attachment').to.be.an('object');
+            expect(questionThread.thread.attachment).to.have.property('payload').to.be.an('object');
+            expect(questionThread.thread.attachment.payload).to.have.property('url').to.have.string('http');
+            expect(questionThread.thread.attachment.payload).to.have.property('url').to.have.string('.gif');
+            // TO DO add sequence test
         });
     });
 });

@@ -2,11 +2,11 @@
     "main": {
         "threadKeys": [
             "get_started_hook",
-            "//$sequence.welcome",
+            "$sequence.welcome",
             "$setup.category",
             "$setup.difficulty",
             "$setup.size",
-            "//$sequence.start",
+            "$sequence.start",
             "$quiz"
         ],
         "endKey": "ji2iZo2zvv"
