@@ -1,13 +1,12 @@
 {
     "QUESTION": {
         "meta": {
-            "template": "picture_url"
+            "template": "quick_replies_attachment"
         },
         "payload": {
-            "url": "",
-            "buttons": [
+            "quick_replies": [
                 {
-                    "type": "postback",
+                    "content_type": "text",
                     "title": "",
                     "payload": ""
                 }
@@ -21,6 +20,17 @@
             },
             "payload": "Sorry! That's not quite right 🤔 . Please try answering again."
         },
-        "title": ""
+        "attachment": {
+            "type":"image",
+            "payload": {
+                "url": ""
+            }
+        },
+        "title": {
+            "meta": {
+                "template": "text"
+            },
+            "payload": ""
+        }
     }
 }
