@@ -1,6 +1,6 @@
 {
   "name": "giphy-quiz-chatbot",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Facebook chatbot app",
   "main": "index.js",
   "scripts": {
