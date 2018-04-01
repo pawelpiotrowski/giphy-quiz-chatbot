@@ -38,5 +38,77 @@
             },
             "payload": "Question $number of $total"
         }
+    },
+    "RESULT": {
+        "meta": {
+            "template": "sequence"
+        },
+        "payload": [
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "typeon",
+                    "args": ""
+                }
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "wait",
+                    "args": 2000
+                }
+            },
+            {
+                "meta": {
+                    "template": "text"
+                },
+                "payload": "Well done 🎉!"
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "typeon",
+                    "args": ""
+                }
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "wait",
+                    "args": 3000
+                }
+            },
+            {
+                "meta": {
+                    "template": "text"
+                },
+                "payload": "Here is your result 👏:"
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "wait",
+                    "args": 1500
+                }
+            },
+            {
+                "meta": {
+                    "template": "text"
+                },
+                "payload": "$result"
+            }
+        ],
+        "correct": "correct",
+        "incorrect": "incorrect"
     }
 }

@@ -225,5 +225,36 @@
                 }
             }
         ]
+    },
+    "FINAL": {
+        "meta": {
+            "template": "sequence"
+        },
+        "payload": [
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "typeon",
+                    "args": ""
+                }
+            },
+            {
+                "meta": {
+                    "template": "action"
+                },
+                "payload": {
+                    "name": "wait",
+                    "args": 3500
+                }
+            },
+            {
+                "meta": {
+                    "template": "text"
+                },
+                "payload": "If you want to try again just type RESTART. Ciao 🤖"
+            }
+        ]
     }
 }
