@@ -256,5 +256,9 @@
                 "payload": "If you want to try again just type RESTART. Ciao 🤖"
             }
         ]
+    },
+    "helpers": {
+        "resetKeyword": "restart",
+        "ok": "okey-dokey"
     }
 }
