@@ -1,10 +1,10 @@
 {
   "name": "giphy-quiz-chatbot",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Facebook chatbot app",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "NODE_ENV=production npm run db_migrate_latest && node index.js",
     "dev": "NODE_ENV=development node index.js",
     "db_migrate_make": "node ./node_modules/knex/bin/cli.js migrate:make",
     "db_migrate_latest": "node ./node_modules/knex/bin/cli.js migrate:latest",
@@ -33,7 +33,7 @@
     "knex": "^0.14.4",
     "lodash": "^4.17.4",
     "minimist": "^1.2.0",
-    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
     "npm-run": "^4.1.2",
     "safe-eval": "^0.3.0"
   },

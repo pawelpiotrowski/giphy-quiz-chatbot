@@ -5,6 +5,7 @@ ehthumbs.db
 .vscode
 secrets.json
 secrets
+app.yaml
 
 # Logs
 logs
