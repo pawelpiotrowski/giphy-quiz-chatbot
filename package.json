@@ -1,9 +1,10 @@
 {
   "name": "giphy-quiz-chatbot",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Facebook chatbot app",
   "main": "index.js",
   "scripts": {
+    "deploy": "npm run test && gcloud app deploy",
     "start": "NODE_ENV=production npm run db_migrate_latest && node index.js",
     "dev": "NODE_ENV=development node index.js",
     "db_migrate_make": "node ./node_modules/knex/bin/cli.js migrate:make",
